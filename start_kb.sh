@@ -1,0 +1,1 @@
+nohup /home/alumnos//ah10/kibana-7.16.2-linux-x86_64/bin/kibana > /dev/null &

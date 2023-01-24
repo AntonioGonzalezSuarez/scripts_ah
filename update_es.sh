@@ -1,0 +1,1 @@
+./remove_index.sh && ./copy_to_es.sh
