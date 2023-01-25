@@ -10,7 +10,7 @@ curl -XPOST localhost:9210/_reindex?pretty -H 'Content-Type: application/json' -
     "query": {
       "range":{
          "@timestamp":{
-            "gte":"now-1d",
+            "gte":"now-7d",
 	    "lt":"now"
          }
       }
