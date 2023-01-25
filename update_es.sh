@@ -6,4 +6,5 @@ function update_es_func()
         sleep 2m
     done
 }
-nohup $update_es_func > /dev/null &
+
+update_es_func

@@ -1,0 +1,1 @@
+nohup ./update_es > /dev/null &
