@@ -23563,3 +23563,10 @@ java.io.IOException: No space left on device
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_152]
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_152]
 	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_152]
+[2023-01-25T00:52:00,001][INFO ][o.e.x.m.MlDailyMaintenanceService] [node-ah10] triggering scheduled [ML] maintenance tasks
+[2023-01-25T00:52:00,029][INFO ][o.e.x.m.a.TransportDeleteExpiredDataAction] [node-ah10] Deleting expired data
+[2023-01-25T00:52:00,100][INFO ][o.e.x.m.j.r.UnusedStatsRemover] [node-ah10] Successfully deleted [0] unused stats documents
+[2023-01-25T00:52:00,101][INFO ][o.e.x.m.a.TransportDeleteExpiredDataAction] [node-ah10] Completed deletion of expired ML data
+[2023-01-25T00:52:00,103][INFO ][o.e.x.m.MlDailyMaintenanceService] [node-ah10] Successfully completed [ML] maintenance task: triggerDeleteExpiredDataTask
+[2023-01-25T02:30:00,016][INFO ][o.e.x.s.SnapshotRetentionTask] [node-ah10] starting SLM retention snapshot cleanup task
+[2023-01-25T02:30:00,020][INFO ][o.e.x.s.SnapshotRetentionTask] [node-ah10] there are no repositories to fetch, SLM retention snapshot cleanup task complete
