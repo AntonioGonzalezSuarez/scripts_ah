@@ -1,4 +1,4 @@
-function update_es()
+function update_es_func()
 {
     while True
     do
@@ -6,4 +6,4 @@ function update_es()
         sleep 2m
     done
 }
-nohup update_es > /dev/null &
+nohup $update_es_func > /dev/null &
