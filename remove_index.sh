@@ -1,1 +1,1 @@
-curl -u elastic:peanut2023 -X DELETE "localhost:9210/index-data?pretty"
+curl -u elastic:peanut2023 -k -X DELETE "https://localhost:9210/index-data?pretty"
