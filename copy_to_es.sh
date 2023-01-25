@@ -4,7 +4,7 @@ curl -XPOST localhost:9210/_reindex?pretty -H 'Content-Type: application/json' -
 {
  "source": {
  "remote": {
- "host": "http://$1:9200",
+ "host": "http://${1}:9200",
  "username": "consultas",
  "password": "icai4ever"
  },
