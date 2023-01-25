@@ -1,1 +1,1 @@
-nohup ./update_es > /dev/null &
+nohup ./update_es.sh > /dev/null &
