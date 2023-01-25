@@ -2,7 +2,7 @@ function update_es()
 {
 echo "Trying with ${1}"
 url="http://${1}:9200"
-curl -XPOST localhost:9210/_reindex?pretty -H 'Content-Type: application/json' -d'
+curl -u elastic:peanut2023 -XPOST localhost:9210/_reindex?pretty -H 'Content-Type: application/json' -d'
 {
  "source": {
  "remote": {
