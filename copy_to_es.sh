@@ -1,8 +1,10 @@
+function update_es()
+{
 curl -XPOST localhost:9210/_reindex?pretty -H 'Content-Type: application/json' -d'
 {
  "source": {
  "remote": {
- "host": "http://worker01:9200",
+ "host": "http://$1:9200",
  "username": "consultas",
  "password": "icai4ever"
  },
@@ -21,3 +23,6 @@ curl -XPOST localhost:9210/_reindex?pretty -H 'Content-Type: application/json' -
  }
 }
 '
+}
+
+update_es "worker01" || update_es "worker02"
