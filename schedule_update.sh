@@ -1,1 +1,1 @@
-nohup ./update_es.sh > update_es.log 2>&1 &
+nohup ./update_es.sh
