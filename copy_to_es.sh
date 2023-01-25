@@ -1,5 +1,6 @@
 function update_es()
 {
+echo "Trying with ${1}"
 url="http://${1}:9200"
 curl -XPOST localhost:9210/_reindex?pretty -H 'Content-Type: application/json' -d'
 {
@@ -26,4 +27,4 @@ curl -XPOST localhost:9210/_reindex?pretty -H 'Content-Type: application/json' -
 '
 }
 
-update_es "worker01" || update_es "worker02"
+update_es "worker01" || update_es "worker02" 
