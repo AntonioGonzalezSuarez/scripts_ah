@@ -1,1 +1,1 @@
-curl -u elastic:peanut2023 -XGET localhost:9210/_cat/health
+curl -u elastic:peanut2023 -k -XGET 'https://localhost:9210/_cat/health'
