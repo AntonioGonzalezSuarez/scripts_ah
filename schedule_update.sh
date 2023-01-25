@@ -1,1 +1,0 @@
-nohup ./update_es.sh
