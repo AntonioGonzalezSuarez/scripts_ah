@@ -29,6 +29,7 @@ EOF
 function update_es()
 {
 url="http://${1}:9200"
+echo "$generate_post_data $url"
 curl -XPOST localhost:9210/_reindex?pretty -H 'Content-Type: application/json' -d "$($generate_post_data $url)"
 }
 
