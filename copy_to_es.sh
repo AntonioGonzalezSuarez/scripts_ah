@@ -14,7 +14,7 @@ curl -u elastic:icai4ever -k -XPOST "https://localhost:9210/_reindex?pretty" -H 
     "query": {
       "range":{
          "@timestamp":{
-            "gte":"now-7d",
+            "gte":"now-10d",
 	    "lt":"now"
          }
       }
