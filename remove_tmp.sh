@@ -1,0 +1,1 @@
+ls -la /tmp | grep ah10 | awk {'print $9'} | xargs -I{} echo rm -rf /tmp/{} | bash
